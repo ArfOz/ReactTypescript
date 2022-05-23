@@ -6,7 +6,10 @@ function classNames(...classes: any) {
   return classes.filter(Boolean).join(' ')
 }
 
-export default function Dropdown() {
+export default function Dropdown({ filtered }: { filtered: any }) {
+  const filter = (params: any) => {
+    filtered(params)
+  }
   return (
     <Menu as='div' className='relative inline-block text-left z-50'>
       <div>
@@ -29,54 +32,54 @@ export default function Dropdown() {
           <div className='py-1'>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href='#'
+                <button
+                  onClick={() => filter('Electronic')}
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm',
                   )}
                 >
                   Electronic
-                </a>
+                </button>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href='#'
+                <button
+                  onClick={() => filter('Furnitures')}
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm',
                   )}
                 >
                   Furnitures
-                </a>
+                </button>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href='#'
+                <button
+                  onClick={() => filter('Clothing')}
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm',
                   )}
                 >
                   Clothing
-                </a>
+                </button>
               )}
             </Menu.Item>
             <Menu.Item>
               {({ active }) => (
-                <a
-                  href='#'
+                <button
+                  onClick={() => filter('Accessories')}
                   className={classNames(
                     active ? 'bg-gray-100 text-gray-900' : 'text-gray-700',
                     'block px-4 py-2 text-sm',
                   )}
                 >
                   Accessories
-                </a>
+                </button>
               )}
             </Menu.Item>
           </div>

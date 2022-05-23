@@ -1,12 +1,10 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Router from './router/router';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+import Router from './router/router'
 
 function App() {
-  return (
-    <Router/>
-  );
+  return <Router />
 }
 
-export default App;
+export default App
