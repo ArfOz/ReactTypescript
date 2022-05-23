@@ -1,7 +1,7 @@
-Todos
-Typescript control will be added
-Url validation yup will be added
-Add to cart will be added
+# Todos
+# Typescript control will be added
+# Url validation yup will be added
+# Add to cart will be added
 
 # Getting Started with Create React App
 
