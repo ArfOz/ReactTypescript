@@ -5,6 +5,8 @@
 
 # Getting Started with Create React App
 
+To run test `npx cypress open`
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
