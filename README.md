@@ -1,3 +1,8 @@
+# Todos
+# Typescript control will be added
+# Url validation yup will be added
+# Add to cart will be added
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
